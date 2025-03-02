@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="645.0" prefWidth="1280.0" style="-fx-border-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HstuTableHandleInterfaceController">
+   <center>
+      <TableView fx:id="table_structural_entities" onMouseClicked="#getSelected" prefHeight="633.0" prefWidth="717.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="ID_column" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Type_column" prefWidth="128.66670989990234" text="Type" />
+            <TableColumn fx:id="Category_column" prefWidth="156.6666717529297" text="Category" />
+            <TableColumn fx:id="Name_column" prefWidth="239.99996948242188" text="Name" />
+            <TableColumn fx:id="Location_column" prefWidth="130.66668701171875" text="Location" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <left>
+      <Pane prefHeight="653.0" prefWidth="269.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="389.0" fitWidth="280.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unischema.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="356.0" fitWidth="272.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hstu.jpg" />
+               </image>
+            </ImageView>
+            <VBox layoutX="6.0" layoutY="248.0" prefHeight="323.0" prefWidth="258.0" spacing="30.0">
+               <children>
+                  <Button fx:id="structuralEntitiesButton" mnemonicParsing="false" onAction="#HandleStructuralEntities" prefHeight="55.0" prefWidth="255.0" style="-fx-background-color: lavender; -fx-border-color: blue;" text="HSTU Structural Entities">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RoomsButton" mnemonicParsing="false" onAction="#HandleRooms" prefHeight="55.0" prefWidth="255.0" style="-fx-background-color: lavender; -fx-border-color: blue;" text="Building Rooms">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="floorsButton" mnemonicParsing="false" onAction="#HandleFloors" prefHeight="55.0" prefWidth="255.0" style="-fx-background-color: lavender; -fx-border-color: blue;" text="Building Floors">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="purposedFloorButton" mnemonicParsing="false" onAction="#HandlePurposedFloor" prefHeight="55.0" prefWidth="255.0" style="-fx-background-color: lavender; -fx-border-color: blue;" text="Special Purposed Floors">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="backButton" layoutX="12.0" layoutY="600.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="77.0" text="Back" textFill="RED">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="639.0" prefWidth="271.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="209.0" fitWidth="278.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hstu6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="245.0" fitWidth="294.0" layoutX="1.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hstu6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="222.0" fitWidth="287.0" layoutX="1.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hstu1.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_RIGHT" layoutX="4.0" layoutY="14.0" prefHeight="85.0" prefWidth="254.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="filterField" onAction="#Search" prefHeight="36.0" prefWidth="249.0" promptText="Search" style="-fx-border-color: blue;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="refreshButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#Refresh" style="-fx-border-color: blue;" text="Refresh">
+                     <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="1.0" layoutY="97.0" prefHeight="361.0" prefWidth="228.0" spacing="9.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="235.0" text="ID" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ID_txt" style="-fx-border-color: blue;">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="49.0" prefWidth="131.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="233.0" text="Type" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="Type_ChoiceBox" prefHeight="47.0" prefWidth="221.0" style="-fx-border-color: blue;" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="233.0" text="Category" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="Category_choiceBox" prefHeight="30.0" prefWidth="247.0" style="-fx-border-color: blue;" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="233.0" text="Name" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Name_txt" style="-fx-border-color: blue;">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="234.0" text="Location" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="Location_choiceBox" prefHeight="32.0" prefWidth="247.0" style="-fx-border-color: blue;" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="80.0" layoutY="468.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="161.0" prefWidth="127.0" spacing="20.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#Add" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #00CC99;" text="Add">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateButton" mnemonicParsing="false" onAction="#Update" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #EED9C4;" text="UPDATE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#Delete" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #ACE5EE;" text="Delete">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="addTypeButton" layoutX="229.0" layoutY="202.0" mnemonicParsing="false" onAction="#AddType" prefHeight="25.0" prefWidth="40.0" style="-fx-border-color: blue;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="addCategoryButton" layoutX="229.0" layoutY="269.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="25.0" prefWidth="40.0" style="-fx-border-color: blue;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

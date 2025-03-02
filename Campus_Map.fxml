@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Campus_Map_Controller">
+   <center>
+      <Pane prefHeight="650.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="728.0" fitWidth="1280.0" layoutY="-27.0">
+               <image>
+                  <Image url="@Map%20Picture/hstu-map.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="32.0" layoutY="584.0" mnemonicParsing="false" onAction="#switchToOptionPage" prefHeight="46.0" prefWidth="112.0" style="-fx-background-color: #53aaf2; -fx-border-color: red;" text="Back">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="476.0" layoutY="500.0" mnemonicParsing="false" onAction="#switchToWazedBuilding" prefHeight="22.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: red;" text="Dr. M. A. Wazed Building">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="580.0" layoutY="437.0" mnemonicParsing="false" onAction="#switchToNewAcademicBuilding" prefHeight="14.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-color: red;" text="New Academic Building">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="178.0" layoutY="576.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="67.0" style="-fx-background-color: white; -fx-border-color: red;" text="Guest House">
+               <font>
+                  <Font name="Arial Black" size="6.0" />
+               </font>
+            </Button>
+            <Button layoutX="111.0" layoutY="532.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="165.0" style="-fx-background-color: white; -fx-border-color: red;" text="Kabi Sufia Kamal Hall (LHE2)">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="205.0" layoutY="415.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: red;" text="Mosque">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="627.0" layoutY="566.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" style="-fx-background-color: white; -fx-border-color: red;" text="Gymnasium">
+               <font>
+                  <Font name="Arial Black" size="6.0" />
+               </font>
+            </Button>
+            <Button layoutX="359.0" layoutY="511.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-background-color: white; -fx-border-color: red;" text="Academic&#10;Building-3&#10;">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="366.0" layoutY="468.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="53.0" style="-fx-background-color: white; -fx-border-color: red;" text="Auditorium-2">
+               <font>
+                  <Font name="Arial Black" size="6.0" />
+               </font>
+            </Button>
+            <Button layoutX="437.0" layoutY="426.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="138.0" style="-fx-background-color: white; -fx-border-color: red;" text="Administrative Building">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="626.0" layoutY="348.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="120.0" style="-fx-background-color: white; -fx-border-color: red;" text="Central Mosque">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="461.0" layoutY="374.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="70.0" style="-fx-background-color: white; -fx-border-color: red;" text="Research Field">
+               <font>
+                  <Font name="Arial Black" size="6.0" />
+               </font>
+            </Button>
+            <Button layoutX="374.0" layoutY="331.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: red;" text="Tajuddin Ahmed Hall (D4)">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="416.0" layoutY="264.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: red;" text="HSTU School">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="144.0" layoutY="286.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="191.0" style="-fx-background-color: white; -fx-border-color: red;" text="Ziaur Rahman Hall (D2)">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="144.0" layoutY="207.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: red;" text="Bangabandhu Sheikh Mujibur Rahman Hall&#10;">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Label layoutX="205.0" layoutY="325.0" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: green;" text="HSTU &#10;Stadium Field" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="556.0" layoutY="374.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="48.0" style="-fx-background-color: white; -fx-border-color: red;" text="Nursery">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="362.0" layoutY="561.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-background-color: white; -fx-border-color: red;" text="Veterinary&#10;Hospital&#10;">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="989.0" layoutY="207.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: red;" text="Residence of VC">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="881.0" layoutY="588.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="95.0" style="-fx-background-color: white; -fx-border-color: red;" text="Canteen TSC &amp; Bank">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="881.0" layoutY="533.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="79.0" style="-fx-background-color: white; -fx-border-color: red;" text="Shaheed Minar">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="879.0" layoutY="488.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="84.0" style="-fx-background-color: white; -fx-border-color: red;" text="Library Building">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="285.0" layoutY="531.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" style="-fx-background-color: white; -fx-border-color: red;" text="Lichi Garden">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="875.0" layoutY="415.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="91.0" style="-fx-background-color: white; -fx-border-color: red;" text="Medical Center">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="731.0" layoutY="538.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="117.0" style="-fx-background-color: white; -fx-border-color: red;" text="Academic Building-1">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="772.0" layoutY="491.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="68.0" style="-fx-background-color: white; -fx-border-color: red;" text="Auditorium-1">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="784.0" layoutY="438.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" style="-fx-background-color: white; -fx-border-color: red;" text="Field Labs">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="798.0" layoutY="365.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="104.0" style="-fx-background-color: white; -fx-border-color: red;" text="VIP Guest House &amp; IRT">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="1040.0" layoutY="591.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Academic Building-2">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="1036.0" layoutY="309.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="IVY Rahman Hall (LHE 1)">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="860.0" layoutY="228.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Children Park">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="967.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="New &#10;Ladies &#10;Hall" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="1103.0" layoutY="379.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="51.0" style="-fx-background-color: white; -fx-border-color: red;" text="IVY &#10;Rahman &#10;Hall &#10;(LHE 1)" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="979.0" layoutY="437.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Sheikh Fazilatunnesa Mujib Hall (D3)">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="1019.0" layoutY="529.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="123.0" style="-fx-background-color: white; -fx-border-color: red;" text="Sheikh Russel Hall(D1)">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="983.0" layoutY="551.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Sheikh Russel Hall Extension(D1)">
+               <font>
+                  <Font name="Arial Black" size="6.0" />
+               </font>
+            </Button>
+            <Label layoutX="772.0" layoutY="174.0" prefHeight="49.0" prefWidth="94.0" style="-fx-background-color: white; -fx-border-color: blue;" text="    Pond" textAlignment="JUSTIFY" textFill="#0c3dc9">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="593.0" layoutY="156.0" prefHeight="44.0" prefWidth="89.0" style="-fx-background-color: white; -fx-border-color: blue;" text="    Pond" textAlignment="JUSTIFY" textFill="#2b0fcc">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="875.0" layoutY="154.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Staff Residence">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Button layoutX="1088.0" layoutY="97.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Staff Residence">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="157.0" layoutY="459.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Staff Residence">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Label layoutX="616.0" layoutY="223.0" prefHeight="22.0" prefWidth="104.0" style="-fx-background-color: green;" text="   Play Ground&#10;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="1013.0" layoutY="465.0" prefHeight="23.0" prefWidth="104.0" style="-fx-background-color: green;" text="   Play Ground&#10;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="969.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: red;" text="Staff Residence">
+               <font>
+                  <Font name="Arial Black" size="7.0" />
+               </font>
+            </Button>
+            <Label layoutX="718.0" layoutY="567.0" prefHeight="23.0" prefWidth="121.0" style="-fx-background-color: green;" text=" Botanical Garden&#10;&#10;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="726.0" layoutY="456.0" prefHeight="38.0" prefWidth="28.0" style="-fx-background-color: white; -fx-border-color: blue;" text="Bus &#10;Stop">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

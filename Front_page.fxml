@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontPageController">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="723.0" fitWidth="1291.0" layoutX="-1.0" layoutY="-44.0" onMouseClicked="#getStarted" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Map%20Picture/Building%20Floor%20Map%20and%20Details.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

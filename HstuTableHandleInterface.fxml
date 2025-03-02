@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="645.0" prefWidth="1280.0" style="-fx-border-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HstuTableHandleInterfaceController">
+   <right>
+      <AnchorPane prefHeight="639.0" prefWidth="271.0" style="-fx-background-color: CornflowerBlue;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="81.0" layoutY="451.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="199.0" prefWidth="127.0" spacing="20.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#Add" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #00CC99;" text="Add">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateButton" mnemonicParsing="false" onAction="#Update" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #EED9C4;" text="UPDATE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#Delete" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #fd6c6c;" text="Delete" textFill="#141414">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="3.0" layoutY="84.0" prefHeight="367.0" prefWidth="228.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="235.0" text="ID">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ID_txt" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="49.0" prefWidth="131.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="233.0" text="Type">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="Type_ChoiceBox" prefHeight="29.0" prefWidth="246.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="233.0" text="Category">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="Category_choiceBox" prefHeight="29.0" prefWidth="245.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="233.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Name_txt" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="234.0" text="Location">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="Location_choiceBox" prefHeight="29.0" prefWidth="243.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="addTypeButton" layoutX="231.0" layoutY="189.0" mnemonicParsing="false" onAction="#AddType" prefHeight="15.0" prefWidth="40.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="addCategoryButton" layoutX="231.0" layoutY="253.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="33.0" prefWidth="40.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <VBox alignment="CENTER_RIGHT" layoutX="8.0" layoutY="7.0" prefHeight="71.0" prefWidth="222.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="filterField" onAction="#Search" promptText="Search">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="refreshButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#Refresh" text="Refresh">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ACE5EE;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="385.0" fitWidth="263.0" layoutY="266.0" pickOnBounds="true">
+               <image>
+                  <Image url="@hstu.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="269.0" fitWidth="263.0" pickOnBounds="true">
+               <image>
+                  <Image url="@hstu1.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="-2.0" layoutY="39.0" prefHeight="228.0" prefWidth="265.0" spacing="20.0">
+               <children>
+                  <Button fx:id="structuralEntitiesButton" mnemonicParsing="false" onAction="#HandleStructuralEntities" prefHeight="41.0" prefWidth="255.0" text="HSTU Structural Entities">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="floorsButton" mnemonicParsing="false" onAction="#HandleFloors" prefHeight="55.0" prefWidth="255.0" text="Building Floors">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RoomsButton" mnemonicParsing="false" onAction="#HandleRooms" prefHeight="55.0" prefWidth="255.0" text="Building Rooms">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="purposedFloorButton" mnemonicParsing="false" onAction="#HandlePurposedFloor" prefHeight="55.0" prefWidth="255.0" text="Special Purposed Floors">
+                     <font>
+                        <Font name="Sylfaen" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="597.0" mnemonicParsing="false" onAction="#goBack" text="Back" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </left>
+   <center>
+      <TableView fx:id="table_structural_entities" onMouseClicked="#getSelected" prefHeight="200.0" prefWidth="738.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="ID_column" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Type_column" prefWidth="128.66670989990234" text="Type" />
+            <TableColumn fx:id="Category_column" prefWidth="156.6666717529297" text="Category" />
+            <TableColumn fx:id="Name_column" prefWidth="239.99996948242188" text="Name" />
+            <TableColumn fx:id="Location_column" prefWidth="130.66668701171875" text="Location" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>
